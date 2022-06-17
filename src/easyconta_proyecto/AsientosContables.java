@@ -21,25 +21,15 @@ public class AsientosContables extends Empresa implements Porcentaje {
     private double Mobiliario;
     private double DocumentoACortoPlazo;
     private double DocumentoALargoPlazo;
+    private double Renta;
+    private double Terreno;
+    private double EquipoDeReparto;
+    private double Edificio;
 
     public AsientosContables() {
     }
 
-    public AsientosContables(String Razon, double Mercancia, double ivaAcreditable, double ivaAcreaditablePagar, double ivaPorCobrar, double ivaPorCobrarPendiente, double Proveedores, double Cliente, double Mobiliario, double DocumentoACortoPlazo, double DocumentoALargoPlazo) {
-        this.Razon = Razon;
-        this.Mercancia = Mercancia;
-        this.ivaAcreditable = ivaAcreditable;
-        this.ivaAcreaditablePagar = ivaAcreaditablePagar;
-        this.ivaPorCobrar = ivaPorCobrar;
-        this.ivaPorCobrarPendiente = ivaPorCobrarPendiente;
-        this.Proveedores = Proveedores;
-        this.Cliente = Cliente;
-        this.Mobiliario = Mobiliario;
-        this.DocumentoACortoPlazo = DocumentoACortoPlazo;
-        this.DocumentoALargoPlazo = DocumentoALargoPlazo;
-    }
-
-    public AsientosContables(String Razon,double Mercancia, double ivaAcreditable, double ivaAcreaditablePagar, double ivaPorCobrar, double ivaPorCobrarPendiente, double Proveedores, double Cliente, double Mobiliario, double DocumentoACortoPlazo, double DocumentoALargoPlazo, double Capital, double Caja, double Banco) {
+    public AsientosContables(String Razon, double Mercancia, double ivaAcreditable, double ivaAcreaditablePagar, double ivaPorCobrar, double ivaPorCobrarPendiente, double Proveedores, double Cliente, double Mobiliario, double DocumentoACortoPlazo, double DocumentoALargoPlazo, double Renta, double Terreno, double EquipoDeReparto, double Edificio, double Capital, double Caja, double Banco) {
         super(Capital, Caja, Banco);
         this.Razon = Razon;
         this.Mercancia = Mercancia;
@@ -52,7 +42,13 @@ public class AsientosContables extends Empresa implements Porcentaje {
         this.Mobiliario = Mobiliario;
         this.DocumentoACortoPlazo = DocumentoACortoPlazo;
         this.DocumentoALargoPlazo = DocumentoALargoPlazo;
+        this.Renta = Renta;
+        this.Terreno = Terreno;
+        this.EquipoDeReparto = EquipoDeReparto;
+        this.Edificio = Edificio;
     }
+
+    
 
     public String getRazon() {
         return Razon;
@@ -158,6 +154,5 @@ public class AsientosContables extends Empresa implements Porcentaje {
     public void calcularPorcentaje(double Valor, double porcentaje) {
         
     }
-    
-    
+
 }

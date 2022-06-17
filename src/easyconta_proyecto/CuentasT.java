@@ -29,6 +29,61 @@ public class CuentasT extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        lblBancoCargo = new javax.swing.JLabel();
+        lblMercanciaCargo = new javax.swing.JLabel();
+        lblCajaCargo = new javax.swing.JLabel();
+        lblBancoAbono = new javax.swing.JLabel();
+        lblMercanciaAbono = new javax.swing.JLabel();
+        lblProveedoresAbono = new javax.swing.JLabel();
+        lblProveedoresCargo = new javax.swing.JLabel();
+        lblClienteCargo = new javax.swing.JLabel();
+        lblClienteAbono = new javax.swing.JLabel();
+        lblCajaAbono = new javax.swing.JLabel();
+        lblMobiliarioAbono = new javax.swing.JLabel();
+        lblDocumentoCargo = new javax.swing.JLabel();
+        lblDocumentoAbono = new javax.swing.JLabel();
+        lblRentaCargo = new javax.swing.JLabel();
+        lblRentaAbono = new javax.swing.JLabel();
+        lblCapitalCargo = new javax.swing.JLabel();
+        lblIvaAcreditableCargo = new javax.swing.JLabel();
+        lblCapitalAbono = new javax.swing.JLabel();
+        lblIvaAcreditableAbono = new javax.swing.JLabel();
+        lblIvaCobrarCargo = new javax.swing.JLabel();
+        lblTerrenoCargo = new javax.swing.JLabel();
+        lblMobiliarioCargo = new javax.swing.JLabel();
+        lblTerrenoAbono = new javax.swing.JLabel();
+        lblEquipoRepartoCargo = new javax.swing.JLabel();
+        lblEquipoRepartoAbono = new javax.swing.JLabel();
+        lblEdificioCargo = new javax.swing.JLabel();
+        lblEdificioAbono = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        lblIvaCobrarAbono = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        lblIvacobrar = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        EquipoReparto = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        lblBancoResultado = new javax.swing.JLabel();
+        lblMercanciaResultado = new javax.swing.JLabel();
+        lblClienteResultado = new javax.swing.JLabel();
+        lblMobiliarioResultado = new javax.swing.JLabel();
+        lblDocumentoResultado = new javax.swing.JLabel();
+        lblProveedoresResultado = new javax.swing.JLabel();
+        lblRentaResultado = new javax.swing.JLabel();
+        lblTerrenoResultado = new javax.swing.JLabel();
+        lblIvaPorCobrarResultado = new javax.swing.JLabel();
+        lblEquipoDeRepartoResultado = new javax.swing.JLabel();
+        lblEdificioResultado = new javax.swing.JLabel();
+        lblIvaAcreditableResultado = new javax.swing.JLabel();
+        lblCapitalResultado = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        lblCajaResultado = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
@@ -58,6 +113,171 @@ public class CuentasT extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 640, 30, -1));
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblBancoCargo.setText("jLabel23");
+        jPanel1.add(lblBancoCargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 70, 130));
+
+        lblMercanciaCargo.setText("jLabel23");
+        jPanel1.add(lblMercanciaCargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, 70, 130));
+
+        lblCajaCargo.setText("jLabel23");
+        jPanel1.add(lblCajaCargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 70, 130));
+
+        lblBancoAbono.setText("jLabel23");
+        jPanel1.add(lblBancoAbono, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, 70, 130));
+
+        lblMercanciaAbono.setText("jLabel23");
+        jPanel1.add(lblMercanciaAbono, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 40, 70, 130));
+
+        lblProveedoresAbono.setText("jLabel23");
+        jPanel1.add(lblProveedoresAbono, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 40, 70, 130));
+
+        lblProveedoresCargo.setText("jLabel23");
+        jPanel1.add(lblProveedoresCargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 40, 70, 130));
+
+        lblClienteCargo.setText("jLabel23");
+        jPanel1.add(lblClienteCargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 70, 130));
+
+        lblClienteAbono.setText("jLabel23");
+        jPanel1.add(lblClienteAbono, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, 70, 130));
+
+        lblCajaAbono.setText("jLabel23");
+        jPanel1.add(lblCajaAbono, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 70, 130));
+
+        lblMobiliarioAbono.setText("jLabel23");
+        jPanel1.add(lblMobiliarioAbono, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 70, 130));
+
+        lblDocumentoCargo.setText("jLabel23");
+        jPanel1.add(lblDocumentoCargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 230, 70, 130));
+
+        lblDocumentoAbono.setText("jLabel23");
+        jPanel1.add(lblDocumentoAbono, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 230, 70, 130));
+
+        lblRentaCargo.setText("jLabel23");
+        jPanel1.add(lblRentaCargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 230, 70, 130));
+
+        lblRentaAbono.setText("jLabel23");
+        jPanel1.add(lblRentaAbono, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 230, 70, 130));
+
+        lblCapitalCargo.setText("jLabel23");
+        jPanel1.add(lblCapitalCargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 40, 70, 130));
+
+        lblIvaAcreditableCargo.setText("jLabel23");
+        jPanel1.add(lblIvaAcreditableCargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 230, 70, 130));
+
+        lblCapitalAbono.setText("jLabel23");
+        jPanel1.add(lblCapitalAbono, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 40, 70, 130));
+
+        lblIvaAcreditableAbono.setText("jLabel23");
+        jPanel1.add(lblIvaAcreditableAbono, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 230, 70, 130));
+
+        lblIvaCobrarCargo.setText("jLabel23");
+        jPanel1.add(lblIvaCobrarCargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, 70, 130));
+
+        lblTerrenoCargo.setText("$");
+        jPanel1.add(lblTerrenoCargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 430, 70, 130));
+
+        lblMobiliarioCargo.setText("jLabel23");
+        jPanel1.add(lblMobiliarioCargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 70, 130));
+
+        lblTerrenoAbono.setText("$");
+        jPanel1.add(lblTerrenoAbono, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 430, 70, 130));
+
+        lblEquipoRepartoCargo.setText("$");
+        jPanel1.add(lblEquipoRepartoCargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 430, 70, 130));
+
+        lblEquipoRepartoAbono.setText("$");
+        jPanel1.add(lblEquipoRepartoAbono, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 430, 70, 130));
+
+        lblEdificioCargo.setText("$");
+        jPanel1.add(lblEdificioCargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 430, 70, 130));
+
+        lblEdificioAbono.setText("$");
+        jPanel1.add(lblEdificioAbono, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 430, 70, 130));
+
+        jLabel50.setText("$");
+        jPanel1.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 430, 70, 130));
+
+        jLabel51.setText("$");
+        jPanel1.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 430, 70, 130));
+
+        jLabel52.setText("Cliente");
+        jPanel1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 70, 20));
+
+        jLabel53.setText("Mobiliario");
+        jPanel1.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, 70, 20));
+
+        jLabel54.setText("Documento");
+        jPanel1.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 200, 70, 20));
+
+        lblIvaCobrarAbono.setText("$");
+        jPanel1.add(lblIvaCobrarAbono, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 430, 70, 130));
+
+        jLabel56.setText("Iva Acreditable");
+        jPanel1.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 200, 80, 20));
+
+        lblIvacobrar.setText("Iva Por cobrar");
+        jPanel1.add(lblIvacobrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, 80, 20));
+
+        jLabel58.setText("Renta");
+        jPanel1.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 200, 70, 20));
+
+        EquipoReparto.setText("Equipo de Reparto");
+        jPanel1.add(EquipoReparto, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 400, 100, 20));
+
+        jLabel60.setText("Edificio");
+        jPanel1.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 400, 80, 20));
+
+        jLabel61.setText("_");
+        jPanel1.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 400, 80, 20));
+
+        jLabel62.setText("Terreno");
+        jPanel1.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 400, 80, 20));
+
+        lblBancoResultado.setText("$");
+        jPanel1.add(lblBancoResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, 90, -1));
+
+        lblMercanciaResultado.setText("$");
+        jPanel1.add(lblMercanciaResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 180, 90, -1));
+
+        lblClienteResultado.setText("$");
+        jPanel1.add(lblClienteResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, 90, -1));
+
+        lblMobiliarioResultado.setText("$");
+        jPanel1.add(lblMobiliarioResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 370, 90, -1));
+
+        lblDocumentoResultado.setText("$");
+        jPanel1.add(lblDocumentoResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 370, 90, -1));
+
+        lblProveedoresResultado.setText("$");
+        jPanel1.add(lblProveedoresResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 180, 90, -1));
+
+        lblRentaResultado.setText("$");
+        jPanel1.add(lblRentaResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 370, 90, -1));
+
+        lblTerrenoResultado.setText("$");
+        jPanel1.add(lblTerrenoResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 570, 90, -1));
+
+        lblIvaPorCobrarResultado.setText("$");
+        jPanel1.add(lblIvaPorCobrarResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 570, 90, -1));
+
+        lblEquipoDeRepartoResultado.setText("$");
+        jPanel1.add(lblEquipoDeRepartoResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 570, 90, -1));
+
+        lblEdificioResultado.setText("$");
+        jPanel1.add(lblEdificioResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 570, 90, -1));
+
+        lblIvaAcreditableResultado.setText("$");
+        jPanel1.add(lblIvaAcreditableResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 370, 90, -1));
+
+        lblCapitalResultado.setText("$");
+        jPanel1.add(lblCapitalResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 180, 90, -1));
+
+        jLabel76.setText("$");
+        jPanel1.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 570, 90, -1));
+
+        lblCajaResultado.setText("$");
+        jPanel1.add(lblCajaResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, 90, -1));
 
         jLabel18.setText("        Banco");
         jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 10, 80, 20));
@@ -104,7 +324,7 @@ public class CuentasT extends javax.swing.JFrame {
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Cuentas t.png"))); // NOI18N
         jLabel10.setText("           ");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, 160, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 160, -1));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Cuentas t.png"))); // NOI18N
         jLabel11.setText("           ");
@@ -147,6 +367,7 @@ public class CuentasT extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -169,7 +390,6 @@ public class CuentasT extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(CuentasT.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -179,6 +399,7 @@ public class CuentasT extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel EquipoReparto;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -197,10 +418,64 @@ public class CuentasT extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblBancoAbono;
+    private javax.swing.JLabel lblBancoCargo;
+    private javax.swing.JLabel lblBancoResultado;
+    private javax.swing.JLabel lblCajaAbono;
+    private javax.swing.JLabel lblCajaCargo;
+    private javax.swing.JLabel lblCajaResultado;
+    private javax.swing.JLabel lblCapitalAbono;
+    private javax.swing.JLabel lblCapitalCargo;
+    private javax.swing.JLabel lblCapitalResultado;
+    private javax.swing.JLabel lblClienteAbono;
+    private javax.swing.JLabel lblClienteCargo;
+    private javax.swing.JLabel lblClienteResultado;
+    private javax.swing.JLabel lblDocumentoAbono;
+    private javax.swing.JLabel lblDocumentoCargo;
+    private javax.swing.JLabel lblDocumentoResultado;
+    private javax.swing.JLabel lblEdificioAbono;
+    private javax.swing.JLabel lblEdificioCargo;
+    private javax.swing.JLabel lblEdificioResultado;
+    private javax.swing.JLabel lblEquipoDeRepartoResultado;
+    private javax.swing.JLabel lblEquipoRepartoAbono;
+    private javax.swing.JLabel lblEquipoRepartoCargo;
+    private javax.swing.JLabel lblIvaAcreditableAbono;
+    private javax.swing.JLabel lblIvaAcreditableCargo;
+    private javax.swing.JLabel lblIvaAcreditableResultado;
+    private javax.swing.JLabel lblIvaCobrarAbono;
+    private javax.swing.JLabel lblIvaCobrarCargo;
+    private javax.swing.JLabel lblIvaPorCobrarResultado;
+    private javax.swing.JLabel lblIvacobrar;
+    private javax.swing.JLabel lblMercanciaAbono;
+    private javax.swing.JLabel lblMercanciaCargo;
+    private javax.swing.JLabel lblMercanciaResultado;
+    private javax.swing.JLabel lblMobiliarioAbono;
+    private javax.swing.JLabel lblMobiliarioCargo;
+    private javax.swing.JLabel lblMobiliarioResultado;
+    private javax.swing.JLabel lblProveedoresAbono;
+    private javax.swing.JLabel lblProveedoresCargo;
+    private javax.swing.JLabel lblProveedoresResultado;
+    private javax.swing.JLabel lblRentaAbono;
+    private javax.swing.JLabel lblRentaCargo;
+    private javax.swing.JLabel lblRentaResultado;
+    private javax.swing.JLabel lblTerrenoAbono;
+    private javax.swing.JLabel lblTerrenoCargo;
+    private javax.swing.JLabel lblTerrenoResultado;
     // End of variables declaration//GEN-END:variables
 }
