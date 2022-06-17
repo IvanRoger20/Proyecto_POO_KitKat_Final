@@ -15,4 +15,18 @@ public class Convertidor {
         b = java.lang.Double.parseDouble(a);
         return b;
     }
+    
+    public static String DoubleaString(double a) {
+        String b;
+        b = String.valueOf(a);
+        return b;
+    }
+    
+    public static void CalcularIva(Porcentaje c,double a) {
+        c.ivaAcreditable(a);
+    }
+    
+    public static void CalcularIvaCobrado(Porcentaje c,double a) {
+        c.ivaPorCobrar(a);
+    }
 }

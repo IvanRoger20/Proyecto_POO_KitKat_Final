@@ -138,16 +138,49 @@ public class AsientosContables extends Empresa implements Porcentaje {
         this.DocumentoALargoPlazo = DocumentoALargoPlazo;
     }
 
+    public double getRenta() {
+        return Renta;
+    }
+
+    public void setRenta(double Renta) {
+        this.Renta = Renta;
+    }
+
+    public double getTerreno() {
+        return Terreno;
+    }
+
+    public void setTerreno(double Terreno) {
+        this.Terreno = Terreno;
+    }
+
+    public double getEquipoDeReparto() {
+        return EquipoDeReparto;
+    }
+
+    public void setEquipoDeReparto(double EquipoDeReparto) {
+        this.EquipoDeReparto = EquipoDeReparto;
+    }
+
+    public double getEdificio() {
+        return Edificio;
+    }
+
+    public void setEdificio(double Edificio) {
+        this.Edificio = Edificio;
+    }
+    
+    
     
 
     @Override
     public void ivaAcreditable(double Saldo) {
-        this.ivaAcreditable = Saldo/0.16;
+        this.ivaAcreditable = Saldo/1.16;
     }
     
     @Override
     public void ivaPorCobrar(double Saldo) {
-        this.ivaPorCobrar = Saldo/0.16;
+        this.ivaPorCobrar = Saldo/1.16;
     }
 
     @Override

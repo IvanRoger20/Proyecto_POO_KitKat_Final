@@ -33,7 +33,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         txtBanco = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        javax.swing.JTextField txtMercancia = new javax.swing.JTextField();
+        txtMercancia = new javax.swing.JTextField();
         chbxDeber = new javax.swing.JCheckBox();
         jLabel5 = new javax.swing.JLabel();
         txtProveedor = new javax.swing.JTextField();
@@ -68,6 +68,11 @@ public class Principal extends javax.swing.JFrame {
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 230, -1));
 
         txtMercancia.setText("0");
+        txtMercancia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtMercanciaActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtMercancia, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 150, -1));
 
         chbxDeber.setText("¿Le debe dinero a algun proveedor?");
@@ -130,16 +135,21 @@ public class Principal extends javax.swing.JFrame {
 
     private void btnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmarActionPerformed
         // TODO add your handling code here:
-        Asientos_Contables asientos = new Asientos_Contables();
-        CuentasT cuentast = new CuentasT();
+        Asientos_Contables asientos = new Asientos_Contables(Convertidor.StringADouble(txtCaja.getText()), Convertidor.StringADouble(txtBanco.getText())
+        , Convertidor.StringADouble(txtMercancia.getText()),Convertidor.StringADouble(txtProveedor.getText()));
+        //CuentasT cuentast = new CuentasT();
         asientos.setResizable(false);
         asientos.setVisible(true);
-        cuentast.setResizable(false);
-        cuentast.setVisible(true);
+        //cuentast.setResizable(false);
+        //cuentast.setVisible(true);
         Principal principal = new Principal();
         principal.setVisible(false);
         dispose();
     }//GEN-LAST:event_btnConfirmarActionPerformed
+
+    private void txtMercanciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMercanciaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtMercanciaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -192,6 +202,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField txtBanco;
     private javax.swing.JTextField txtCaja;
+    private javax.swing.JTextField txtMercancia;
     private javax.swing.JTextField txtProveedor;
     // End of variables declaration//GEN-END:variables
 }

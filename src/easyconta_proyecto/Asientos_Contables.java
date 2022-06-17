@@ -5,20 +5,92 @@
  */
 package easyconta_proyecto;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+
 
 /**
  *
  * @author IvanTron
  */
 
-
+        
 public class Asientos_Contables extends javax.swing.JFrame {
-    
+        AsientosContables datosCargo = new AsientosContables();
+        AsientosContables datosAbono = new AsientosContables();
+        SaldosFinales datosFinales = new SaldosFinales();
+        AsientosContables Iva = new AsientosContables();
+        
     /**
      * Creates new form Asientos_Contables
      */
     public Asientos_Contables() {
         initComponents();
+        cbxAsientos1.addActionListener(new java.awt.event.ActionListener() {
+        @Override
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+        cbxAsientos1ActionPerformed(evt);
+        }
+        });
+        cbxAsientos2.addActionListener(new java.awt.event.ActionListener() {
+        @Override
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+        cbxAsientos1ActionPerformed(evt);
+        }
+        });
+        cbxAsientos3.addActionListener(new java.awt.event.ActionListener() {
+        @Override
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+        cbxAsientos1ActionPerformed(evt);
+        }
+        });
+        cbxAsientos4.addActionListener(new java.awt.event.ActionListener() {
+        @Override
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+        cbxAsientos1ActionPerformed(evt);
+        }
+        });
+    }
+    
+    public Asientos_Contables(double Caja,double Banco,Double Mercancia,Double Proveedor) {
+        initComponents();
+        datosFinales.setCajaFinal(Caja);
+        datosFinales.setBancoFinal(Banco);
+        datosFinales.setMercancia(Mercancia);
+        datosFinales.setProveedores(Proveedor);
+        lblCaja.setText(String.valueOf(datosFinales.getCajaFinal()));
+        lblBanco.setText(String.valueOf(datosFinales.getBancoFinal()));
+        lblMercancia.setText(String.valueOf(datosFinales.getMercancia()));
+        lblProveedores.setText(String.valueOf(datosFinales.getProveedores()));
+        
+        
+        cbxAsientos1.addActionListener(new java.awt.event.ActionListener() {
+        @Override
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+        cbxAsientos1ActionPerformed(evt);
+        }
+        });
+        cbxAsientos2.addActionListener(new java.awt.event.ActionListener() {
+        @Override
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+        cbxAsientos1ActionPerformed(evt);
+        }
+        });
+        cbxAsientos3.addActionListener(new java.awt.event.ActionListener() {
+        @Override
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+        cbxAsientos1ActionPerformed(evt);
+        }
+        });
+        cbxAsientos4.addActionListener(new java.awt.event.ActionListener() {
+        @Override
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+        cbxAsientos1ActionPerformed(evt);
+        }
+        });
     }
     
     
@@ -58,6 +130,32 @@ public class Asientos_Contables extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         btnAgregar = new javax.swing.JButton();
         btnTerminar = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        lbl = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        lblBanco = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        lblMercancia = new javax.swing.JLabel();
+        lblProveedores = new javax.swing.JLabel();
+        lblCliente = new javax.swing.JLabel();
+        lblMobiliario = new javax.swing.JLabel();
+        lblDocumento = new javax.swing.JLabel();
+        lblEquipoReparto = new javax.swing.JLabel();
+        lblCaja = new javax.swing.JLabel();
+        lblRenta = new javax.swing.JLabel();
+        lblEdificio = new javax.swing.JLabel();
+        lblTerreno = new javax.swing.JLabel();
+        lblIvaAcreditable = new javax.swing.JLabel();
+        lblIvaPorCobrar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -91,22 +189,37 @@ public class Asientos_Contables extends javax.swing.JFrame {
         cbxAsientos4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione...", "Caja", "Banco", "Mercancia", "Proveedores", "Cliente", "Mobiliario", "Documento", "Terreno", "Equipo de reparto", "Renta", "Edificio" }));
         getContentPane().add(cbxAsientos4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 160, -1));
 
+        txtCargo1.setText("0");
         txtCargo1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtCargo1ActionPerformed(evt);
             }
         });
         getContentPane().add(txtCargo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 90, -1));
+
+        txtCargo2.setText("0");
         getContentPane().add(txtCargo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, 90, -1));
+
+        txtCargo3.setText("0");
         getContentPane().add(txtCargo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 90, -1));
+
+        txtCargo4.setText("0");
         getContentPane().add(txtCargo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, 90, -1));
+
+        txtAbono1.setText("0");
         getContentPane().add(txtAbono1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, 90, -1));
+
+        txtAbono2.setText("0");
         getContentPane().add(txtAbono2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 90, -1));
+
+        txtAbono3.setText("0");
         getContentPane().add(txtAbono3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 160, 90, -1));
+
+        txtAbono4.setText("0");
         getContentPane().add(txtAbono4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 200, 90, -1));
 
         jLabel4.setText("    ");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 290, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 310, -1, -1));
 
         jLabel6.setText("$");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 80, 10, 20));
@@ -141,10 +254,93 @@ public class Asientos_Contables extends javax.swing.JFrame {
                 btnAgregarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 243, 130, 50));
+        getContentPane().add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 130, 50));
 
         btnTerminar.setText("Terminar");
-        getContentPane().add(btnTerminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, 120, 50));
+        btnTerminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTerminarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnTerminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 270, 120, 50));
+
+        jLabel14.setText("Iva Acraditable: $");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 10, -1, -1));
+
+        jLabel15.setText("Iva Por cobrar: $");
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 30, 100, -1));
+
+        jLabel16.setText("Mercancia: $");
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 90, 80, -1));
+
+        jLabel17.setText("Proveedores: $");
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 110, 90, -1));
+
+        jLabel18.setText("Cliente: $");
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 130, 80, -1));
+
+        jLabel19.setText("Mobiliario: $");
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 150, 80, -1));
+
+        jLabel20.setText("Banco: $");
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, 80, -1));
+
+        jLabel21.setText("Documento: $");
+        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 170, 80, -1));
+
+        jLabel22.setText("Terreno: $");
+        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 190, 80, -1));
+
+        jLabel23.setText("Equipo de reparto: $");
+        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 210, 110, -1));
+
+        lbl.setText("Renta: $");
+        getContentPane().add(lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 230, 80, -1));
+
+        jLabel25.setText("Caja: $");
+        getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 50, 80, -1));
+
+        lblBanco.setText("-");
+        getContentPane().add(lblBanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 70, 80, -1));
+
+        jLabel27.setText("Edificio: $");
+        getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 250, 80, -1));
+
+        lblMercancia.setText("-");
+        getContentPane().add(lblMercancia, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 90, 80, -1));
+
+        lblProveedores.setText("-");
+        getContentPane().add(lblProveedores, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 110, 80, -1));
+
+        lblCliente.setText("-");
+        getContentPane().add(lblCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 80, -1));
+
+        lblMobiliario.setText("-");
+        getContentPane().add(lblMobiliario, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 150, 80, -1));
+
+        lblDocumento.setText("-");
+        getContentPane().add(lblDocumento, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 170, 80, -1));
+
+        lblEquipoReparto.setText("-");
+        getContentPane().add(lblEquipoReparto, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 210, 80, -1));
+
+        lblCaja.setText("-");
+        getContentPane().add(lblCaja, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 50, 90, 10));
+
+        lblRenta.setText("-");
+        getContentPane().add(lblRenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, 80, -1));
+
+        lblEdificio.setText("-");
+        getContentPane().add(lblEdificio, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 250, 80, -1));
+
+        lblTerreno.setText("-");
+        getContentPane().add(lblTerreno, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 190, 80, -1));
+
+        lblIvaAcreditable.setText("-");
+        getContentPane().add(lblIvaAcreditable, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 10, 70, -1));
+
+        lblIvaPorCobrar.setText("-");
+        getContentPane().add(lblIvaPorCobrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 30, 70, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -159,22 +355,277 @@ public class Asientos_Contables extends javax.swing.JFrame {
     
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         
-        cbxAsientos1.addActionListener(new java.awt.event.ActionListener() {
-        @Override
-        public void actionPerformed(java.awt.event.ActionEvent evt) {
-        cbxAsientos1ActionPerformed(evt);
-        }
-        });
-        AsientosContables datosCargo = new AsientosContables();
-        AsientosContables datosAbono = new AsientosContables();
-        // TODO add your handling code here:
         
+        
+        // TODO add your handling code here:
+        if(cbxAsientos1.getSelectedIndex() != 0){
+            if ("0".equals(txtCargo1.getText()) & "0".equals(txtAbono1.getText())){
+                try {
+                    throw new Exception("No se ingreso ningun dato");
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                } finally{
+                    String message = "Porfavor introduzca un valor en almenos 1 de los cuadros de texto\n";
+                    JOptionPane.showMessageDialog(new JFrame(), message, "Error",
+                    JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        }
         if(cbxAsientos1.getSelectedIndex() == 1) {
             datosCargo.setCaja(Convertidor.StringADouble(txtCargo1.getText()));
             datosAbono.setCaja(Convertidor.StringADouble(txtAbono1.getText()));
-            
+            datosFinales.setCajaFinal(datosFinales.getCajaFinal() + (datosCargo.getCaja() - datosAbono.getCaja()));
+            lblCaja.setText(String.valueOf(datosFinales.getCajaFinal()));
+        } else if(cbxAsientos1.getSelectedIndex() == 2) {
+            datosCargo.setBanco(Convertidor.StringADouble(txtCargo1.getText()));
+            datosAbono.setBanco(Convertidor.StringADouble(txtAbono1.getText()));
+            datosFinales.setBancoFinal(datosFinales.getBancoFinal() + (datosCargo.getBanco() - datosAbono.getBanco()));
+            lblBanco.setText(String.valueOf(datosFinales.getBancoFinal()));
+        } else if(cbxAsientos1.getSelectedIndex() == 3) {
+            datosCargo.setMercancia(Convertidor.StringADouble(txtCargo1.getText()));
+            datosAbono.setMercancia(Convertidor.StringADouble(txtAbono1.getText()));
+            datosFinales.setMercancia(datosFinales.getMercancia() + (datosCargo.getMercancia() - datosAbono.getMercancia()));
+            lblMercancia.setText(String.valueOf(datosFinales.getMercancia()));
+        } else if(cbxAsientos1.getSelectedIndex() == 4) {
+            datosCargo.setProveedores(Convertidor.StringADouble(txtCargo1.getText()));
+            datosAbono.setProveedores(Convertidor.StringADouble(txtAbono1.getText()));
+            datosFinales.setProveedores(datosFinales.getProveedores() + (datosCargo.getProveedores() - datosAbono.getProveedores()));
+            lblProveedores.setText(String.valueOf(datosFinales.getProveedores()));
+        } else if(cbxAsientos1.getSelectedIndex() == 5) {
+            datosCargo.setCliente(Convertidor.StringADouble(txtCargo1.getText()));
+            datosAbono.setCliente(Convertidor.StringADouble(txtAbono1.getText()));
+            datosFinales.setCliente(datosFinales.getCliente() + (datosCargo.getCliente() - datosAbono.getCliente()));
+            lblCliente.setText(String.valueOf(datosFinales.getCliente()));
+        } else if(cbxAsientos1.getSelectedIndex() == 6) {
+            datosCargo.setMobiliario(Convertidor.StringADouble(txtCargo1.getText()));
+            datosAbono.setMobiliario(Convertidor.StringADouble(txtAbono1.getText()));
+            datosFinales.setMobiliario(datosFinales.getMobiliario() + (datosCargo.getMobiliario() - datosAbono.getMobiliario()));
+            lblMobiliario.setText(String.valueOf(datosFinales.getMobiliario()));
+        } else if(cbxAsientos1.getSelectedIndex() == 7) {
+            datosCargo.setDocumentoALargoPlazo(Convertidor.StringADouble(txtCargo1.getText()));
+            datosAbono.setDocumentoALargoPlazo(Convertidor.StringADouble(txtAbono1.getText()));
+            datosFinales.setDocumentoALargoPlazo(datosFinales.getDocumentoALargoPlazo() + (datosCargo.getDocumentoALargoPlazo() - datosAbono.getDocumentoALargoPlazo()));
+            lblDocumento.setText(String.valueOf(datosFinales.getDocumentoALargoPlazo()));
+        } else if(cbxAsientos1.getSelectedIndex() == 8) {
+            datosCargo.setTerreno(Convertidor.StringADouble(txtCargo1.getText()));
+            datosAbono.setTerreno(Convertidor.StringADouble(txtAbono1.getText()));
+            datosFinales.setTerreno(datosFinales.getTerreno() + (datosCargo.getTerreno() - datosAbono.getTerreno()));
+            lblTerreno.setText(String.valueOf(datosFinales.getTerreno()));
+        } else if(cbxAsientos1.getSelectedIndex() == 9) {
+            datosCargo.setEquipoDeReparto(Convertidor.StringADouble(txtCargo1.getText()));
+            datosAbono.setEquipoDeReparto(Convertidor.StringADouble(txtAbono1.getText()));
+            datosFinales.setEquipoDeReparto(datosFinales.getTerreno() + (datosCargo.getEquipoDeReparto() - datosAbono.getEquipoDeReparto()));
+            lblEquipoReparto.setText(String.valueOf(datosFinales.getEquipoDeReparto()));
+        } else if(cbxAsientos1.getSelectedIndex() == 10) {
+            datosCargo.setRenta(Convertidor.StringADouble(txtCargo1.getText()));
+            datosAbono.setRenta(Convertidor.StringADouble(txtAbono1.getText()));
+            datosFinales.setRenta(datosFinales.getRenta() + (datosCargo.getRenta() - datosAbono.getRenta()));
+            lblRenta.setText(String.valueOf(datosFinales.getRenta()));
+        } else if(cbxAsientos1.getSelectedIndex() == 11) {
+            datosCargo.setEdificio(Convertidor.StringADouble(txtCargo1.getText()));
+            datosAbono.setEdificio(Convertidor.StringADouble(txtAbono1.getText()));
+            datosFinales.setEdificio(datosFinales.getEdificio() + (datosCargo.getEdificio() - datosAbono.getEdificio()));
+            lblEdificio.setText(String.valueOf(datosFinales.getEdificio()));
         }
+        
+        if(cbxAsientos2.getSelectedIndex() == 1) {
+            datosCargo.setCaja(Convertidor.StringADouble(txtCargo2.getText()));
+            datosAbono.setCaja(Convertidor.StringADouble(txtAbono2.getText()));
+            datosFinales.setCajaFinal(datosFinales.getCajaFinal() + (datosCargo.getCaja() - datosAbono.getCaja()));
+            lblCaja.setText(String.valueOf(datosFinales.getCajaFinal()));
+        } else if(cbxAsientos2.getSelectedIndex() == 2) {
+            datosCargo.setBanco(Convertidor.StringADouble(txtCargo2.getText()));
+            datosAbono.setBanco(Convertidor.StringADouble(txtAbono2.getText()));
+            datosFinales.setBancoFinal(datosFinales.getBancoFinal() + (datosCargo.getBanco() - datosAbono.getBanco()));
+            lblBanco.setText(String.valueOf(datosFinales.getBancoFinal()));
+        } else if(cbxAsientos2.getSelectedIndex() == 3) {
+            datosCargo.setMercancia(Convertidor.StringADouble(txtCargo2.getText()));
+            datosAbono.setMercancia(Convertidor.StringADouble(txtAbono2.getText()));
+            datosFinales.setMercancia(datosFinales.getMercancia() + (datosCargo.getMercancia() - datosAbono.getMercancia()));
+            lblMercancia.setText(String.valueOf(datosFinales.getMercancia()));
+        } else if(cbxAsientos2.getSelectedIndex() == 4) {
+            datosCargo.setProveedores(Convertidor.StringADouble(txtCargo2.getText()));
+            datosAbono.setProveedores(Convertidor.StringADouble(txtAbono2.getText()));
+            datosFinales.setProveedores(datosFinales.getProveedores() + (datosCargo.getProveedores() - datosAbono.getProveedores()));
+            lblProveedores.setText(String.valueOf(datosFinales.getProveedores()));
+        } else if(cbxAsientos2.getSelectedIndex() == 5) {
+            datosCargo.setCliente(Convertidor.StringADouble(txtCargo2.getText()));
+            datosAbono.setCliente(Convertidor.StringADouble(txtAbono2.getText()));
+            datosFinales.setCliente(datosFinales.getCliente() + (datosCargo.getCliente() - datosAbono.getCliente()));
+            lblCliente.setText(String.valueOf(datosFinales.getCliente()));
+        } else if(cbxAsientos2.getSelectedIndex() == 6) {
+            datosCargo.setMobiliario(Convertidor.StringADouble(txtCargo2.getText()));
+            datosAbono.setMobiliario(Convertidor.StringADouble(txtAbono2.getText()));
+            datosFinales.setMobiliario(datosFinales.getMobiliario() + (datosCargo.getMobiliario() - datosAbono.getMobiliario()));
+            lblMobiliario.setText(String.valueOf(datosFinales.getMobiliario()));
+        } else if(cbxAsientos2.getSelectedIndex() == 7) {
+            datosCargo.setDocumentoALargoPlazo(Convertidor.StringADouble(txtCargo2.getText()));
+            datosAbono.setDocumentoALargoPlazo(Convertidor.StringADouble(txtAbono2.getText()));
+            datosFinales.setDocumentoALargoPlazo(datosFinales.getDocumentoALargoPlazo() + (datosCargo.getDocumentoALargoPlazo() - datosAbono.getDocumentoALargoPlazo()));
+            lblDocumento.setText(String.valueOf(datosFinales.getDocumentoALargoPlazo()));
+        } else if(cbxAsientos2.getSelectedIndex() == 8) {
+            datosCargo.setTerreno(Convertidor.StringADouble(txtCargo2.getText()));
+            datosAbono.setTerreno(Convertidor.StringADouble(txtAbono2.getText()));
+            datosFinales.setTerreno(datosFinales.getTerreno() + (datosCargo.getTerreno() - datosAbono.getTerreno()));
+            lblTerreno.setText(String.valueOf(datosFinales.getTerreno()));
+        } else if(cbxAsientos2.getSelectedIndex() == 9) {
+            datosCargo.setEquipoDeReparto(Convertidor.StringADouble(txtCargo2.getText()));
+            datosAbono.setEquipoDeReparto(Convertidor.StringADouble(txtAbono2.getText()));
+            datosFinales.setEquipoDeReparto(datosFinales.getTerreno() + (datosCargo.getEquipoDeReparto() - datosAbono.getEquipoDeReparto()));
+            lblEquipoReparto.setText(String.valueOf(datosFinales.getEquipoDeReparto()));
+        } else if(cbxAsientos2.getSelectedIndex() == 10) {
+            datosCargo.setRenta(Convertidor.StringADouble(txtCargo2.getText()));
+            datosAbono.setRenta(Convertidor.StringADouble(txtAbono2.getText()));
+            datosFinales.setRenta(datosFinales.getRenta() + (datosCargo.getRenta() - datosAbono.getRenta()));
+            lblRenta.setText(String.valueOf(datosFinales.getRenta()));
+        } else if(cbxAsientos2.getSelectedIndex() == 11) {
+            datosCargo.setEdificio(Convertidor.StringADouble(txtCargo2.getText()));
+            datosAbono.setEdificio(Convertidor.StringADouble(txtAbono2.getText()));
+            datosFinales.setEdificio(datosFinales.getEdificio() + (datosCargo.getEdificio() - datosAbono.getEdificio()));
+            lblEdificio.setText(String.valueOf(datosFinales.getEdificio()));
+        }
+        
+        if(cbxAsientos3.getSelectedIndex() == 1) {
+            datosCargo.setCaja(Convertidor.StringADouble(txtCargo3.getText()));
+            datosAbono.setCaja(Convertidor.StringADouble(txtAbono3.getText()));
+            datosFinales.setCajaFinal(datosFinales.getCajaFinal() + (datosCargo.getCaja() - datosAbono.getCaja()));
+            lblCaja.setText(String.valueOf(datosFinales.getCajaFinal()));
+        } else if(cbxAsientos3.getSelectedIndex() == 2) {
+            datosCargo.setBanco(Convertidor.StringADouble(txtCargo3.getText()));
+            datosAbono.setBanco(Convertidor.StringADouble(txtAbono3.getText()));
+            datosFinales.setBancoFinal(datosFinales.getBancoFinal() + (datosCargo.getBanco() - datosAbono.getBanco()));
+            lblBanco.setText(String.valueOf(datosFinales.getBancoFinal()));
+        } else if(cbxAsientos3.getSelectedIndex() == 3) {
+            datosCargo.setMercancia(Convertidor.StringADouble(txtCargo3.getText()));
+            datosAbono.setMercancia(Convertidor.StringADouble(txtAbono3.getText()));
+            datosFinales.setMercancia(datosFinales.getMercancia() + (datosCargo.getMercancia() - datosAbono.getMercancia()));
+            lblMercancia.setText(String.valueOf(datosFinales.getMercancia()));
+        } else if(cbxAsientos3.getSelectedIndex() == 4) {
+            datosCargo.setProveedores(Convertidor.StringADouble(txtCargo3.getText()));
+            datosAbono.setProveedores(Convertidor.StringADouble(txtAbono3.getText()));
+            datosFinales.setProveedores(datosFinales.getProveedores() + (datosCargo.getProveedores() - datosAbono.getProveedores()));
+            lblProveedores.setText(String.valueOf(datosFinales.getProveedores()));
+        } else if(cbxAsientos3.getSelectedIndex() == 5) {
+            datosCargo.setCliente(Convertidor.StringADouble(txtCargo3.getText()));
+            datosAbono.setCliente(Convertidor.StringADouble(txtAbono3.getText()));
+            datosFinales.setCliente(datosFinales.getCliente() + (datosCargo.getCliente() - datosAbono.getCliente()));
+            lblCliente.setText(String.valueOf(datosFinales.getCliente()));
+        } else if(cbxAsientos3.getSelectedIndex() == 6) {
+            datosCargo.setMobiliario(Convertidor.StringADouble(txtCargo3.getText()));
+            datosAbono.setMobiliario(Convertidor.StringADouble(txtAbono3.getText()));
+            datosFinales.setMobiliario(datosFinales.getMobiliario() + (datosCargo.getMobiliario() - datosAbono.getMobiliario()));
+            lblMobiliario.setText(String.valueOf(datosFinales.getMobiliario()));
+        } else if(cbxAsientos3.getSelectedIndex() == 7) {
+            datosCargo.setDocumentoALargoPlazo(Convertidor.StringADouble(txtCargo3.getText()));
+            datosAbono.setDocumentoALargoPlazo(Convertidor.StringADouble(txtAbono3.getText()));
+            datosFinales.setDocumentoALargoPlazo(datosFinales.getDocumentoALargoPlazo() + (datosCargo.getDocumentoALargoPlazo() - datosAbono.getDocumentoALargoPlazo()));
+            lblDocumento.setText(String.valueOf(datosFinales.getDocumentoALargoPlazo()));
+        } else if(cbxAsientos3.getSelectedIndex() == 8) {
+            datosCargo.setTerreno(Convertidor.StringADouble(txtCargo3.getText()));
+            datosAbono.setTerreno(Convertidor.StringADouble(txtAbono3.getText()));
+            datosFinales.setTerreno(datosFinales.getTerreno() + (datosCargo.getTerreno() - datosAbono.getTerreno()));
+            lblTerreno.setText(String.valueOf(datosFinales.getTerreno()));
+        } else if(cbxAsientos3.getSelectedIndex() == 9) {
+            datosCargo.setEquipoDeReparto(Convertidor.StringADouble(txtCargo3.getText()));
+            datosAbono.setEquipoDeReparto(Convertidor.StringADouble(txtAbono3.getText()));
+            datosFinales.setEquipoDeReparto(datosFinales.getTerreno() + (datosCargo.getEquipoDeReparto() - datosAbono.getEquipoDeReparto()));
+            lblEquipoReparto.setText(String.valueOf(datosFinales.getEquipoDeReparto()));
+        } else if(cbxAsientos3.getSelectedIndex() == 10) {
+            datosCargo.setRenta(Convertidor.StringADouble(txtCargo3.getText()));
+            datosAbono.setRenta(Convertidor.StringADouble(txtAbono3.getText()));
+            datosFinales.setRenta(datosFinales.getRenta() + (datosCargo.getRenta() - datosAbono.getRenta()));
+            lblRenta.setText(String.valueOf(datosFinales.getRenta()));
+        } else if(cbxAsientos3.getSelectedIndex() == 11) {
+            datosCargo.setEdificio(Convertidor.StringADouble(txtCargo3.getText()));
+            datosAbono.setEdificio(Convertidor.StringADouble(txtAbono3.getText()));
+            datosFinales.setEdificio(datosFinales.getEdificio() + (datosCargo.getEdificio() - datosAbono.getEdificio()));
+            lblEdificio.setText(String.valueOf(datosFinales.getEdificio()));
+        }
+        
+        if(cbxAsientos4.getSelectedIndex() == 1) {
+            datosCargo.setCaja(Convertidor.StringADouble(txtCargo4.getText()));
+            datosAbono.setCaja(Convertidor.StringADouble(txtAbono4.getText()));
+            datosFinales.setCajaFinal(datosFinales.getCajaFinal() + (datosCargo.getCaja() - datosAbono.getCaja()));
+            lblCaja.setText(String.valueOf(datosFinales.getCajaFinal()));
+        } else if(cbxAsientos4.getSelectedIndex() == 2) {
+            datosCargo.setBanco(Convertidor.StringADouble(txtCargo4.getText()));
+            datosAbono.setBanco(Convertidor.StringADouble(txtAbono4.getText()));
+            datosFinales.setBancoFinal(datosFinales.getBancoFinal() + (datosCargo.getBanco() - datosAbono.getBanco()));
+            lblBanco.setText(String.valueOf(datosFinales.getBancoFinal()));
+        } else if(cbxAsientos4.getSelectedIndex() == 3) {
+            datosCargo.setMercancia(Convertidor.StringADouble(txtCargo4.getText()));
+            datosAbono.setMercancia(Convertidor.StringADouble(txtAbono4.getText()));
+            datosFinales.setMercancia(datosFinales.getMercancia() + (datosCargo.getMercancia() - datosAbono.getMercancia()));
+            lblMercancia.setText(String.valueOf(datosFinales.getMercancia()));
+        } else if(cbxAsientos4.getSelectedIndex() == 4) {
+            datosCargo.setProveedores(Convertidor.StringADouble(txtCargo4.getText()));
+            datosAbono.setProveedores(Convertidor.StringADouble(txtAbono4.getText()));
+            datosFinales.setProveedores(datosFinales.getProveedores() + (datosCargo.getProveedores() - datosAbono.getProveedores()));
+            lblProveedores.setText(String.valueOf(datosFinales.getProveedores()));
+        } else if(cbxAsientos4.getSelectedIndex() == 5) {
+            datosCargo.setCliente(Convertidor.StringADouble(txtCargo4.getText()));
+            datosAbono.setCliente(Convertidor.StringADouble(txtAbono4.getText()));
+            datosFinales.setCliente(datosFinales.getCliente() + (datosCargo.getCliente() - datosAbono.getCliente()));
+            lblCliente.setText(String.valueOf(datosFinales.getCliente()));
+        } else if(cbxAsientos4.getSelectedIndex() == 6) {
+            datosCargo.setMobiliario(Convertidor.StringADouble(txtCargo4.getText()));
+            datosAbono.setMobiliario(Convertidor.StringADouble(txtAbono4.getText()));
+            datosFinales.setMobiliario(datosFinales.getMobiliario() + (datosCargo.getMobiliario() - datosAbono.getMobiliario()));
+            lblMobiliario.setText(String.valueOf(datosFinales.getMobiliario()));
+        } else if(cbxAsientos4.getSelectedIndex() == 7) {
+            datosCargo.setDocumentoALargoPlazo(Convertidor.StringADouble(txtCargo4.getText()));
+            datosAbono.setDocumentoALargoPlazo(Convertidor.StringADouble(txtAbono4.getText()));
+            datosFinales.setDocumentoALargoPlazo(datosFinales.getDocumentoALargoPlazo() + (datosCargo.getDocumentoALargoPlazo() - datosAbono.getDocumentoALargoPlazo()));
+            lblDocumento.setText(String.valueOf(datosFinales.getDocumentoALargoPlazo()));
+        } else if(cbxAsientos4.getSelectedIndex() == 8) {
+            datosCargo.setTerreno(Convertidor.StringADouble(txtCargo4.getText()));
+            datosAbono.setTerreno(Convertidor.StringADouble(txtAbono4.getText()));
+            datosFinales.setTerreno(datosFinales.getTerreno() + (datosCargo.getTerreno() - datosAbono.getTerreno()));
+            lblTerreno.setText(String.valueOf(datosFinales.getTerreno()));
+        } else if(cbxAsientos4.getSelectedIndex() == 9) {
+            datosCargo.setEquipoDeReparto(Convertidor.StringADouble(txtCargo4.getText()));
+            datosAbono.setEquipoDeReparto(Convertidor.StringADouble(txtAbono4.getText()));
+            datosFinales.setEquipoDeReparto(datosFinales.getTerreno() + (datosCargo.getEquipoDeReparto() - datosAbono.getEquipoDeReparto()));
+            lblEquipoReparto.setText(String.valueOf(datosFinales.getEquipoDeReparto()));
+        } else if(cbxAsientos4.getSelectedIndex() == 10) {
+            datosCargo.setRenta(Convertidor.StringADouble(txtCargo4.getText()));
+            datosAbono.setRenta(Convertidor.StringADouble(txtAbono4.getText()));
+            datosFinales.setRenta(datosFinales.getRenta() + (datosCargo.getRenta() - datosAbono.getRenta()));
+            lblRenta.setText(String.valueOf(datosFinales.getRenta()));
+        } else if(cbxAsientos4.getSelectedIndex() == 11) {
+            datosCargo.setEdificio(Convertidor.StringADouble(txtCargo4.getText()));
+            datosAbono.setEdificio(Convertidor.StringADouble(txtAbono4.getText()));
+            datosFinales.setEdificio(datosFinales.getEdificio() + (datosCargo.getEdificio() - datosAbono.getEdificio()));
+            lblEdificio.setText(String.valueOf(datosFinales.getEdificio()));
+        }
+        if(!"0".equals(txtCargo1.getText())){
+            Convertidor.CalcularIva(Iva, Convertidor.StringADouble(txtCargo1.getText()));
+            datosFinales.setIvaAcreditable(datosFinales.getIvaAcreditable() + (Convertidor.StringADouble(txtCargo1.getText()) - Iva.getIvaAcreditable()));
+            lblIvaAcreditable.setText(String.valueOf(datosFinales.getIvaAcreditable()));
+        } else if(!"0".equals(txtAbono1.getText())) {
+            Convertidor.CalcularIvaCobrado(Iva, Convertidor.StringADouble(txtAbono1.getText()));
+            datosFinales.setIvaPorCobrar(datosFinales.getIvaPorCobrar() + (Convertidor.StringADouble(txtAbono1.getText()) -  Iva.getIvaPorCobrar()));
+            lblIvaPorCobrar.setText(String.valueOf(datosFinales.getIvaPorCobrar()));
+        }
+        cbxAsientos1.setSelectedIndex(0);
+        cbxAsientos2.setSelectedIndex(0);
+        cbxAsientos3.setSelectedIndex(0);
+        cbxAsientos4.setSelectedIndex(0);
+        txtAbono1.setText("0");
+        txtAbono2.setText("0");
+        txtAbono3.setText("0");
+        txtAbono4.setText("0");
+        txtCargo1.setText("0");
+        txtCargo2.setText("0");
+        txtCargo3.setText("0");
+        txtCargo4.setText("0");
     }//GEN-LAST:event_btnAgregarActionPerformed
+
+    private void btnTerminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTerminarActionPerformed
+        // TODO add your handling code here:
+        
+        
+    }//GEN-LAST:event_btnTerminarActionPerformed
     
     
     
@@ -228,7 +679,19 @@ public class Asientos_Contables extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -236,6 +699,20 @@ public class Asientos_Contables extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel lbl;
+    private javax.swing.JLabel lblBanco;
+    private javax.swing.JLabel lblCaja;
+    private javax.swing.JLabel lblCliente;
+    private javax.swing.JLabel lblDocumento;
+    private javax.swing.JLabel lblEdificio;
+    private javax.swing.JLabel lblEquipoReparto;
+    private javax.swing.JLabel lblIvaAcreditable;
+    private javax.swing.JLabel lblIvaPorCobrar;
+    private javax.swing.JLabel lblMercancia;
+    private javax.swing.JLabel lblMobiliario;
+    private javax.swing.JLabel lblProveedores;
+    private javax.swing.JLabel lblRenta;
+    private javax.swing.JLabel lblTerreno;
     private javax.swing.JTextField txtAbono1;
     private javax.swing.JTextField txtAbono2;
     private javax.swing.JTextField txtAbono3;
